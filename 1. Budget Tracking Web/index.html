@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="trackerContainer" style="display:none;">
+    <h1>Budget Tracker</h1>
+    
+    <!-- Welcome Section -->
+
+    <h2>Welcome, <span id="userDisplay"></span></h2>
+
+    <!-- Balance Section -->
+    <div id="balance" class="balance">
+      <h2>Balance: $<span id="balanceAmount">0.00</span></h2>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <div class="income">
+        <h3>Income</h3>
+        <p>$<span id="incomeAmount">0.00</span></p>
+      </div>
+      <div class="expense">
+        <h3>Expense</h3>
+        <p>$<span id="expenseAmount">0.00</span></p>
+      </div>
+    </div>
+
+    <!-- Add Transaction Section -->
+    <div class="add-transaction">
+      <h3>Add New Transaction</h3>
+      <form id="transactionForm">
+        <div class="form-control">
+          <label for="description">Description</label>
+          <input type="text" id="description" placeholder="Enter description" required>
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount (negative - expense, positive - income)</label>
+          <input type="number" id="amount" placeholder="Enter amount" required>
+        </div>
+        <button type="submit">Add Transaction</button>
+        
+      </form>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="transaction-history">
+      <h3>Transaction History</h3>
+      <ul id="transactionList">
+        <!-- Transaction items will appear here -->
+      </ul>
+    </div>
+  </div>
+  <button id="logoutBtn" style="float: right;">Logout</button>
+
+  <script src="script2.js">
+
+  </script>
+</body>
+</html>

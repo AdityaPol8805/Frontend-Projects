@@ -1,0 +1,119 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .balance {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .balance h2 {
+    font-size: 2rem;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .summary div {
+    width: 45%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .income h3, .expense h3 {
+    margin: 0;
+  }
+  
+  .add-transaction {
+    margin: 30px 0;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .transaction-history {
+    margin-top: 30px;
+  }
+  
+  .transaction-history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-history ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .transaction-history ul li.income {
+    border-right: 5px solid #28a745;
+  }
+  
+  .transaction-history ul li.expense {
+    border-right: 5px solid #dc3545;
+  }
+  
+  .transaction-history ul li button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
