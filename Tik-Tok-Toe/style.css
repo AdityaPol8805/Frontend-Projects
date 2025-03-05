@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Game Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 2.5rem;
+    color: #b0413e;
+    background-color: #ffffc7;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.box.faint {
+    opacity: 0.5;
+    background-color: #d3d3d3;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Button Styling */
+.reset, .new-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #191913;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.reset:hover, .new-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Message Container */
+#msg {
+    color: #ffffc7;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.msg-Container {
+    height: auto;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .game {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .box {
+        height: 80px;
+        width: 80px;
+        font-size: 2rem;
+    }
+
+    .reset, .new-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
